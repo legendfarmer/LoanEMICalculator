@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "60774601365",
+    "project_id": "firebase-loanemicalculator"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60774601365:android:0b47af4f84776a1d",
+        "android_client_info": {
+          "package_name": "com.legendfarmer.loanemicalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnkYRrRj2Dm0iydbxv4Dm9scLgPNLpcP4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-89120669-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

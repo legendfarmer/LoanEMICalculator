@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_action_home_48"
+        app:showAsAction="ifRoom"
+        android:title="@string/rateApp"
+        />
+    <item
+        android:id="@+id/calcEMI"
+        android:title="@string/calculate_emi"
+        android:orderInCategory="200"
+
+        >
+    </item>
+    <item
+        android:id="@+id/loanAfford"
+        android:title="@string/loanAfford"
+        android:orderInCategory="300"
+        >
+    </item>
+    <item
+        android:id="@+id/exitapp"
+        android:title="@string/action_exit"
+        android:orderInCategory="400"
+        >
+    </item>
+
+</menu>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loanResSummary"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@+id/loanSummary"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:text="@string/shareRes"
+            android:layout_width="0dp"
+            android:id="@+id/loanResShare"
+            android:layout_gravity="bottom|right"
+            android:layout_weight="1"
+            android:layout_height="38dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loanSummary"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/resLabel"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:text="@string/loanPaySumm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/label1"
+                android:layout_weight="1"
+                android:textStyle="normal|bold"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/resBox">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/xdxx"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/emidiv"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="@string/EMI"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView15"
+                        android:textStyle="normal|bold"
+                        android:textSize="14dp"
+                        android:layout_width="100dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:text="@string/_0"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loanResEMI"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tenureDiv"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:id="@+id/affordLabel"
+                        android:textStyle="normal|bold"
+                        android:layout_width="100dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:text="@string/tenure" />
+
+                    <TextView
+                        android:text="@string/_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loanResTenure"
+                        android:textAlignment="center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loanAmountLbl"
+                        android:layout_weight="1"
+                        android:textStyle="normal|bold"
+                        android:textColor="#000000"
+                        android:text="@string/loanAmt" />
+
+                    <TextView
+                        android:text="@string/_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loanResLoan"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="@string/intPayable"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/interestLbl"
+                        android:textStyle="normal|bold"
+                        android:layout_weight="1"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:text="@string/_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loanResInterest"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="@string/totPay"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totalLabel"
+                        android:layout_weight="1"
+                        android:textStyle="normal|bold"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:text="@string/_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loanResTot"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

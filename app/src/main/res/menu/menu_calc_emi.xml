@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.legendfarmer.emicalculator.MainActivity">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_action_home_48"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100"
+        android:title="@string/rateApp"
+        />
+    <item
+        android:id="@+id/compare"
+        android:title="@string/compare"
+        android:orderInCategory="200"
+
+        >
+    </item>
+    <item
+        android:id="@+id/loanAfford"
+        android:title="@string/loanAfford"
+        android:orderInCategory="300"
+        >
+    </item>
+    <item
+        android:id="@+id/exitapp"
+        android:title="@string/action_exit"
+        android:orderInCategory="400"
+        >
+    </item>
+</menu>
